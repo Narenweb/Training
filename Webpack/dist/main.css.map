@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":";;;AACA;EACI;AAAJ;AACI;EACI,WAJG;AAKX;AACI;EACI;AACR,C","sources":["webpack://webpack/./src/style.scss"],"sourcesContent":["$dark-blue:blue;\r\nbody{\r\n    background-color: aqua;\r\n    h1{\r\n        color:$dark-blue;\r\n    }\r\n    p{\r\n        font-size: 40px;\r\n    }\r\n}"],"names":[],"sourceRoot":""}

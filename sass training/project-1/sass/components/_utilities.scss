@@ -1,0 +1,47 @@
+@use 'sass:math';
+@import 'variables';
+
+
+$utilities:(
+    "font-size":(
+        "prefix":"font",
+        "values":(
+            'sm':$base-font-size,
+            'md':$font-size-sm,
+            'lg':$font-size-md,
+            'xl':$font-size-lg
+        )
+    ),
+    "display": (
+        "prefix": "display",
+        "values": (
+          "n": none,
+          "b": block,
+          "f": flex,
+          "i": inline,
+          "i-b": inline-block
+        )
+      ),
+      "padding": (
+    "prefix": "p",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8
+    ),
+  ),
+);
+
+@each $property,$map in $utilities{
+    $prefix:map-get($map,"prefix");
+    $values:map-get($map,"values");
+    @each $key,$val in $values{
+        .#{$prefix}-#{$key}{
+            #{$property}:$val;
+        }
+    }
+}
+//font-sm:10px

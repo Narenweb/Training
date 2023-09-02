@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+  overflow:hidden;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    width: 17%;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.content {
+  position:absolute;
+  top:0;
+  left:20%;
+    display: none;
+    padding: 20px;
+    width: 100vw;
+  height: 100vh;
+}
+.home{
+  background-color: lightblue;
+}
+.about{
+  background-color: lightgreen;
+}
+.about>p{
+  width: 50%;
+}
+.service{
+  background-color: aqua;
+}
+.next{
+  width: 200px;
+  height: 300px;
+  background-color: darkblue;
+  margin: 0 0 0 100px;
+  color:#fff;
+  position:absolute;
+  top:50%;
+  left:50%;
+    transform:translate(-50%,-50%);
+  display: none;
+  text-align:center;
+   border-radius:10px;
+  display: none;
+}
+.close{
+  width: 100px;
+  height: 25px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin:auto;
+  background-color: red;
+  color:#fff;
+  border:none;
+  border-radius:5px;
+  margin-top: 80px;
+}
+input,.submitBtn{
+  margin-top: 10px;
+  outline:none;
+}
+.submitBtn{
+    padding: 5px 30px;
+    background-color: rgb(158, 223, 46);
+    border-radius: 5px;
+    outline:none;
+    border:none;
+}
+.btn{
+    background-color: lightgreen;
+    border:1px solid grey;
+    padding:10px;
+    border-radius: 5px;
+}
+
+

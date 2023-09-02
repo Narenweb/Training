@@ -1,0 +1,151 @@
+body{
+    background-color: #f2f7fb;
+}
+
+.Container {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 11px 60px 0 250px;
+    border-radius: 10px;
+  box-shadow: 0 2px 74px 0 var(--black-7);
+  background-color:white;
+    
+
+}
+table{
+    display: inline-flex;
+    justify-content: center;
+    margin: 88px 0 0 260px;
+    object-fit: contain;
+    background-color: f2f7fb;
+}
+
+/* Logo image */
+img.AnywhereWorks-Logo {
+    width: 170px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.Numbers {
+    width: 116px;
+    height: 19px;
+    margin: 57px 0 0 404px;
+    font-family: Futura;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--greyish-brown);
+}
+
+/* connect img */
+img .connect {
+    width: 700px;
+    height: 190px;
+    margin: 0 0 573px;
+    object-fit: contain;
+}
+
+/* Paragraph heading */
+.Hey-Christeena {
+    width: 122px;
+    height: 22px;
+    margin: 19px 538px 16px 40px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #39414d;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+/* paragraph */
+.When-physical-distan {
+    width: 608px;
+    height: 300px;
+    margin: 0 52px 0 40px;
+    line-height: 1.79;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #39414d;
+
+}
+
+.Rectangle {
+    width: 243px;
+    height: 40px;
+    margin: 0 260.5px 0 260.5px;
+    border-radius: 27px;
+    padding-top: 15px;
+    border: solid 1px #72ab3e;
+    background-color: #83c447;
+
+}
+
+.btn {
+    text-decoration: none;
+    margin: 50px 0 0 30px;
+    font-family: LeagueSpartan;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: white;
+
+}
+
+.Happy-Collaboration{
+    margin: 0 0 8px 45px;
+    width: 138px;
+    height: 19px;
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #39414d;
+
+}
+
+.AnywhereWorks-Team{
+    width: 162px;
+    height: 19px;
+    margin:0 0 40px 45px;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: bold;
+    color: #39414d;
+}
+
+.bottom{
+    margin-top: 20px;
+}
+.bottom{
+    margin-top: 20px;
+}
+.App-Download{
+    width: 159px;
+    padding-top: 30px;
+    height: 19px;
+  margin: 20px 0 50px 570px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  color: #39414d;
+}
+
+.App-Download .link{
+    text-decoration: none;
+    color: #41a5e8;
+}
+
+.Available{
+    width: 315px;
+  height: 17px;
+  margin: 8px 0 52px 500px;
+  opacity: 0.8;
+  font-family: OpenSans;
+  font-size: 12px;
+  color: #39414d;
+}

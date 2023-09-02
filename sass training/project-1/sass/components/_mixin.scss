@@ -1,0 +1,23 @@
+@mixin btn {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+//Mixin with parameters
+@mixin para($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 30px 20px;
+    border: 2px solid $btn-dark;
+    margin: 10px;
+    box-shadow: 1px 1px 5px $lite-color;
+
+    &:hover {
+        background-color: darken($bg-color, 10%)
+    }
+}

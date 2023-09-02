@@ -1,0 +1,39 @@
+$colors:(
+    "primary":blue,
+    "success":green,
+    "danger":red,
+    "info":aqua
+);
+//map-get($map:,$key:)
+@debug map-get($colors,"primary");
+
+@each $key, $val in $colors{
+    //before vaiable name we need to add # symbol
+    .text-#{$key}{
+        color:$val;
+    }
+    .bg-#{$key}{
+        background-color:$val;
+    }
+   
+    //Lighten color
+    @for $i from 1 through 3{
+        .text-#{$key}-light-#{$i}{
+            color:lighten($val,$i *10);
+        }
+        .bg-#{$key}-light-#{$i}{
+            background-color: lighten($val,$i * 10);
+        }
+    }
+
+     //Darken color
+     @for $i from 1 through 9{
+        .text-#{$key}-dark-#{$i}{
+            color:darken($val, $i * 10);
+        }
+        .bg-#{$key}-dark-#{$i}{
+            background-color: darken($val,$i * 10);
+        }
+     }
+}
+

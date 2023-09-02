@@ -1,0 +1,31 @@
+// @use 'sass:math';
+// Variables
+$success :rgb(151, 195, 19);
+$btn-primary:rgb(44, 124, 161);
+$lite-color:#ffffff;
+$btn-blue:#241a7d;
+$btn-danger:#cf1616;
+$btn-dark:#000;
+$bg-grey:grey;
+$base-font-size:1rem;
+$font-size-sm:$base-font-size*0.75;
+$font-size-md:$base-font-size*1.5;
+$font-size-lg:$base-font-size*2;
+$base-padding:5px;
+
+// @debug math.random(11);
+
+// $margin:(
+//     "mt":10,
+//     "ml":20,
+//     "mr":30
+// );
+
+// @each $key,$val in $margin{
+//     .mt-#{$val}{
+//         margin-top: $val;
+//     }
+// }
+
+
+

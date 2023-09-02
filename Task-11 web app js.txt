@@ -1,0 +1,138 @@
+import './sass/main.scss';
+import jsonData from './emailData';
+document.addEventListener('DOMContentLoaded', () => {
+    // jsonData
+    const searchContainer = document.querySelector('.search-container');
+    const inboxSection = document.querySelector('.inbox-section');
+
+    // window.addEventListener('scroll', () => {
+    //     const scrollY = window.scrollY;
+
+    //     if (scrollY) {  
+    //         searchContainer.style.backgroundColor = "grey";
+    //         searchContainer.style.transition = "0.3s";
+    //     }
+    //     else {
+    //         searchContainer.style.backgroundColor = "transparent";
+    //     }
+
+
+    // });
+    //Search input fixed functionality
+    inboxSection.addEventListener('scroll', () => {
+        const scrollY = inboxSection.scrollTop;
+
+        if (scrollY) {
+            searchContainer.classList.add('search-container-active');
+        }
+        else {
+            searchContainer.classList.remove('search-container-active');
+        }
+
+
+    });
+
+    //Searching functionality
+    const searchInput = document.querySelector('.search-input');
+
+    searchInput.addEventListener('keyup', () => {
+        const filter = searchInput.value.toLowerCase();
+        const emailContainers = document.querySelectorAll('.flex-container');
+
+        emailContainers.forEach(container => {
+            const subject = container.dataset.subject ? container.dataset.subject.toLowerCase() : '';
+            const name = container.dataset.name ? container.dataset.name.toLowerCase() : '';
+            if (subject.includes(filter) || name.includes(filter)) {
+                container.style.display = 'flex';
+            } else {
+                container.style.display = 'none';
+            }
+        });
+    })
+    // Now you can access the JSON data directly from the 'jsonData' variable
+        // displayEmails(jsonData.emails);
+
+        // // Function to display the emails on the webpage
+        // function displayEmails(emails) {
+        //     const emailListDiv = document.getElementById('emailList');
+
+        //     // Loop through each email and create a <div> to display its content
+        //     emails.forEach(email => {
+        //         // Create a <div> for the email content
+        //         const emailDiv = document.createElement('div');
+        //         emailDiv.innerHTML = `
+        //        <h2 class="sub">${email.subject}</h2>
+        //        <div class="profile-card">
+        //          <div class="small-profile-details">
+        //            <img src="${email.profileImage}" alt="profile" class="small-profile">
+        //            <div class="user-details">
+        //              <h2 class="user-name">${email.name}</h2>
+        //              <p class="mail">${email.email}</p>
+        //            </div>
+        //          </div>
+        //          <span class="fetch-time">${email.fetchTime}</span>
+        //          </div>
+        //          <p class="data-content">${email.content}</p>
+            
+        //      `;
+
+        //         // Append the email content <div> to the emailListDiv
+        //         emailListDiv.appendChild(emailDiv);
+        //     });
+        // }
+        // function displayEmailContent(emailId) {
+        //     const dynamicContentContainer = document.querySelector('.emailList');
+            
+        //     // Find the email with the given ID
+        //     const email = jsonData.find(item => item.id === emailId);
+            
+        //     if (email) {
+        //         // Display the email content in the dynamic content container
+        //         dynamicContentContainer.innerHTML = email.content;
+        //     }
+        // }
+        // const flexContainers = document.querySelectorAll('.flex-container');    
+        // flexContainers.forEach(container => {
+        //     container.addEventListener('click', () => {
+        //         const emailId = parseInt(container.getAttribute('data-id'));
+        //         displayEmailContent(emailId);
+        //     });
+        // });
+        function displayEmailContent(emailId) {
+            const email = jsonData.emails.find(email => email.id === parseInt(emailId));
+        
+            if (email) {
+                const contentDiv = document.getElementById('emailList');
+                contentDiv.innerHTML = `
+                    <h2 class="sub">${email.subject}</h2>
+                    <div class="profile-card">
+                        <div class="small-profile-details">
+                            <img src="${email.profileImage}" alt="profile" class="small-profile">
+                            <div class="user-details">
+                                <h2 class="user-name">${email.name}</h2>
+                                <p class="mail">${email.email}</p>
+                            </div>
+                        </div>
+                        <span class="fetch-time">${email.fetchTime}</span>
+                    </div>
+                    <p class="data-content">${email.content}</p>
+                `;
+            }
+        }
+        // Get all flex-container elements
+const flexContainers = document.querySelectorAll('.flex-container');
+
+// Attach a click event listener to each flex-container
+flexContainers.forEach(container => {
+    container.addEventListener('click', () => {
+        const emailId = container.getAttribute('data-email-id');
+        displayEmailContent(emailId);
+    });
+});
+window.addEventListener('load', () => {
+    displayEmailContent("1");
+});   
+
+
+
+})

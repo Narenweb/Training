@@ -1,0 +1,128 @@
+@import 'variables';
+@import 'colors';
+@import 'card';
+@import 'mixin';
+@import 'functions';
+@import 'utilities';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $success;
+    font-size: 18px;
+}
+
+.container1 {
+    margin: 0 auto;
+    max-width: 1100px;
+    text-align: center;
+}
+header{
+    background-color: $bg-grey;
+
+    li{
+        cursor: pointer;
+    }
+}
+.active{
+    background-color: map-get($colors, "info" );
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+
+    li{
+        color: $btn-dark;
+    }
+}
+
+h1 {
+    // text-align: center;
+    color: $lite-color;
+    margin-top: 30px;
+    background-color: $btn-blue;
+    padding: 15px;
+    border-radius: 5px;
+    // display: inline-block;
+
+}
+
+.text-wrap>p {
+    margin-top: 50px;
+
+    &:nth-of-type(1) {
+        font-size: $font-size-sm;
+    }
+
+    &:nth-of-type(2) {
+        font-size: $font-size-md;
+    }
+
+    &:nth-of-type(3) {
+        font-size: $font-size-lg;
+        color: map-get($colors, "success");
+    }
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+
+    li {
+        color: $lite-color;
+        list-style: none;
+
+        &:last-child {
+            color: $btn-danger;
+        }
+    }
+
+}
+
+.add {
+    @include btn;
+    background-color: $bg-grey;
+}
+
+.sub {
+    @include btn;
+    background-color: $btn-dark;
+}
+
+.mul {
+    @include btn;
+    background-color: $btn-primary;
+}
+
+.div {
+    @include btn;
+    background-color: $btn-danger;
+    color: $lite-color;
+}
+
+.container>p:nth-child(1) {
+    @include para(rgb(26, 120, 214), #ffffff)
+}
+
+.container>p:nth-child(2) {
+    @include para(rgb(230, 171, 23), #d4e6ee)
+}
+
+.container>p:nth-child(3) {
+    @include para(rgb(237, 36, 10), #d1db20)
+}
+
+.container>p:nth-child(4) {
+    @include para(rgb(227, 243, 10), #432cd8)
+}
+
+span{
+    color: map-get($colors,'info' );
+    font-size: change-to-rem(32);
+}

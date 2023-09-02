@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    background-color: aqua;
+}
+p{
+    margin-top: 100px;
+}
+img{
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: 20px auto;
+}

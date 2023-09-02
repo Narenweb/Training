@@ -1,0 +1,15 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.getElementById('navbar');
+    const hero = document.querySelector(".hero");
+    const heroHeight = hero.offsetHeight;
+  
+    window.addEventListener('scroll', function() {
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition >= heroHeight) {
+        navbar.classList.add('navbar-fixed');
+      } else {
+        navbar.classList.remove('navbar-fixed');
+      }
+    });
+  });

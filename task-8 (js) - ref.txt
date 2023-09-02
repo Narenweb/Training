@@ -1,0 +1,24 @@
+// hamburger.addEventListener('click',()=>{
+//     hamburger.classList.toggle('active');
+//     phoneImg.classList.toggle('img-hidden');
+//     navbar.classList.toggle('nav-active');
+// })
+// window.addEventListener('scroll',()=>{
+    
+//     if(position>=navHeight){
+//     navbar.classList.add('fixed-navbar');
+//     navbar.classList.remove('nav-active');
+//     phoneImg.classList.remove('img-hidden');
+// }
+// else{
+//     navbar.classList.remove('fixed-navbar');
+// }
+// })
+
+For getting each dot.....
+const dots = document.querySelectorAll('.dot');
+dots.forEach((dot)=>{
+    dot.addEventListener('click',()=>{
+        dot.classList.toggle('activedot');
+    })
+})

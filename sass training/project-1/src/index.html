@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header id="navbar">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Help</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container1">
+        <h1>Sass course</h1>
+        <div class="text-wrap">
+            <p class="text-danger-light-2 bg-info-light-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt, omnis ullam? Eveniet eligendi incidunt similique dolorem expedita dicta ea asperiores quasi
+                sunt debitis veniam possimus reprehenderit labore facere, ipsa iure vitae rerum quaerat. Officia rem
+                illum alias id. Officia laborum neque, velit voluptate necessitatibus fugit rem nihil, quia quidem qui,
+                suscipit dolorum. Ab fugit ullam soluta quos incidunt ipsa asperiores molestiae consequatur. Magni hic
+                architecto molestiae deserunt, impedit ipsam tempore aliquid voluptatum sapiente quam assumenda
+                necessitatibus velit tempora illo harum quibusdam reiciendis voluptate placeat alias commodi voluptatem?
+                Eveniet qui odio iste, magnam, optio a, neque voluptatem error exercitationem mollitia repellat?</p>
+            <p class="bg-danger-light-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempore odio
+                aliquid ratione, laudantium doloremque non neque tempora expedita recusandae rerum illo delectus
+                accusamus deleniti eius ut odit impedit voluptate.
+            </p>
+            <p class="bg-info-dark-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum tempore odio
+                aliquid ratione, laudantium doloremque non neque tempora expedita recusandae rerum illo delectus
+                accusamus deleniti eius ut odit impedit voluptate.
+            </p>
+            <p class="text-primary bg-danger-dark-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+                tempore odio aliquid ratione, laudantium doloremque non neque tempora expedita recusandae rerum illo
+                delectus accusamus deleniti eius ut odit impedit voluptate.
+            </p>
+        </div>
+        <h1>Mixin</h1><br>
+        <button class="add">Add</button>
+        <button class="sub">sub</button>
+        <button class="mul">Mul</button>
+        <button class="div">Div</button>
+        <h1>Mixin with parameters</h1><br>
+        <div class="container">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa eos vel totam modi quod sint dignissimos
+                dolore voluptatem natus numquam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa eos vel totam modi quod sint dignissimos
+                dolore voluptatem natus numquam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa eos vel totam modi quod sint dignissimos
+                dolore voluptatem natus numquam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa eos vel totam modi quod sint dignissimos
+                dolore voluptatem natus numquam.
+            </p>
+        </div>
+        <h1>Extend</h1><br>
+        <div class="card-container">
+            <div class="card">
+                <h2 class="card-header">
+                    Card 1
+                </h2>
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus placeat doloremque nobis
+                    assumenda iure corrupti, magni reprehenderit dignissimos officiis dolorem dolore excepturi culpa
+                    animi eius molestias quae ut nostrum laudantium quos eos quo eveniet sunt pariatur! Adipisci
+                    voluptas repellat doloribus?
+                </div>
+            </div>
+            <div class="card1">
+                <h2>
+                    Card 2
+                </h2>
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus placeat doloremque nobis
+                    assumenda iure corrupti, magni reprehenderit dignissimos officiis dolorem dolore excepturi culpa
+                    animi eius molestias quae ut nostrum laudantium quos eos quo eveniet sunt pariatur! Adipisci
+                    voluptas repellat doloribus?
+                </div>
+            </div>
+        </div>
+        <h1>Functions</h1><br>
+        <span>font size unit is changed</span>
+    </div>
+    <script>
+        const navbar = document.getElementById("navbar");
+        const navHeight = navbar.offsetHeight;
+        window.addEventListener('scroll', () => {
+            const position = window.scrollY;
+            if (position >= navHeight) {
+                navbar.classList.add('active');
+            }
+            else {
+                navbar.classList.remove('active');
+            }
+        })
+    </script>
+</body>
+
+</html>

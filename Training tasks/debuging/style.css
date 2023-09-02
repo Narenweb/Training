@@ -1,0 +1,13 @@
+.dots{
+    display: flex;
+    margin-top: 20px;
+}
+
+.dot{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+background-color: aqua;
+margin-left: 10px;
+text-align: center;
+}

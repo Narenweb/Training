@@ -1,0 +1,15 @@
+.flex li:nth-child(4) a{
+    margin-right: 125px;
+}
+
+/* Media query */
+/* @media screen and (max-width:450px){
+    .hero{
+        width: 100vh;
+        min-height: 100vh;
+    }
+    .budget-cards{
+        display: flex;
+        flex-direction: column;
+    }
+} */

@@ -1,0 +1,23 @@
+$breakpoints:(
+    "viewport-xsm":395px,
+    "viewport-sm":480px,
+    "viewport-md":769px,
+    "viewport-lg":930px,
+    "viewport-xl":1070px,
+);
+
+@mixin breakpoints($get){
+    @media (max-width:$get){
+    @content;
+    }
+}
+
+@include breakpoints(map-get($breakpoints,"viewport-lg")) {
+}
+
+//@mixin mobile{
+ //   @media (max-width:#{map-get($breakpoints,"viewport-sm")}){
+//   }
+//} 
+
+-- to install sass -- npm i sass -d   

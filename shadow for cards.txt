@@ -1,0 +1,5 @@
+card shadow normal -  box-shadow: 0 19px 33px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+card shadow thick - box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+
+Card shadow in adaptiveU - box-shadow: 0 3px 28px 0 rgba(0,0,0,0.2);

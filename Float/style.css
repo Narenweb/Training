@@ -1,0 +1,67 @@
+/* Main parent div */
+.container {
+    width: 33.3%;
+    float: left;
+}
+
+.con {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+
+    background-color: red;
+}
+
+.green {
+
+    background-color: green;
+}
+
+.blue {
+
+    background-color: blue;
+}
+
+.get {
+    margin-top: 20px;
+    border: 5px solid red;
+    width: 200px;
+    height: 200px;
+}
+
+.get1 {
+    border: 5px solid green;
+    width: 200px;
+    height: 200px;
+}
+
+/* This clear fix is mainly used for stop the overlaying to the another item while using float concepts */
+.clearfix {
+   clear: left;
+}
+
+.black{
+    width:100px;
+    height:100px;
+    background-color: black;
+    margin-top: 30px;
+    float: left;
+}
+
+.orange{
+    width:100px;
+    height:100px;
+    background-color: orange;
+    margin-top: 30px;
+    float: left;
+}
+
+.yellow{
+    width:100px;
+    height:100px;
+    background-color: yellow;
+    margin-top: 30px;
+    float: left;
+}

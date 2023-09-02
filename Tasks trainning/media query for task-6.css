@@ -1,0 +1,58 @@
+/* ----------Media query for you dif task-6--------- */
+@media only screen and (max-width:480px) {
+    header>.container {
+        display: none;
+    }
+
+    .hero {
+        /* width:100vh; */
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .budget-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .development>.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        position: relative;
+        top: 100px;
+        bottom: 30px;
+        left: 50px;
+        padding: 20px 30px 20px 30px;
+        width: 80%;
+    }
+
+    .selection-card {
+        width: 200px;
+    }
+
+    .card__header {
+        width: 200px;
+    }
+
+    .interface {
+        margin-top: 40px;
+    }
+
+    .interface p,
+    h2 {
+        padding: 10px;
+    }
+
+    .budget {
+        margin-top: 780px;
+    }
+
+    footer>.container {
+        display: none;
+    }
+
+}
